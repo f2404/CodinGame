@@ -26,7 +26,7 @@ int main()
     char hexs[701] = {0}, coded[2048] = {0};
     size_t len = strlen(MESSAGE);
     for (size_t i = 0; i < len; ++i) {
-        char *h[BITS+1] = {0};
+        char h[BITS+1] = {0};
         char2hex(MESSAGE[i], h);
         strcat(hexs, h);
     }
